@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory | Apex Motors</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header class="site-header" id="header">
+    <div class="wrap nav">
+      <a href="index.html" class="brand">Apex <span>Motors</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="inventory.html" class="is-active">Inventory</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="index.html#contact" class="btn btn-ghost">Get in touch</a>
+        <button type="button" class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="inventory-header">
+      <div class="wrap">
+        <div class="inventory-intro reveal">
+          <span class="eyebrow">Apex Motors</span>
+          <h1>Our inventory</h1>
+          <p>
+            Take a look at the cars currently available.
+            From newer models to affordable older cars,
+            there is something for different budgets.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section inventory-section">
+      <div class="wrap">
+
+        <div class="inventory-bar reveal">
+          <div>
+            <span class="inventory-count">8 vehicles</span>
+          </div>
+          <div class="filters">
+            <button class="filter is-on" data-filter="all">All</button>
+            <button class="filter" data-filter="suv">SUV</button>
+            <button class="filter" data-filter="sedan">Sedan</button>
+            <button class="filter" data-filter="hatchback">Hatchback</button>
+            <button class="filter" data-filter="classic">Classic</button>
+          </div>
+        </div>
+
+        <div class="cars" id="carGrid">
+
+          <article class="car" data-category="sedan">
+            <div class="car-img">
+              <span class="car-tag">Featured</span>
+              <img src="images/hondacivic.png" alt="2023 Honda Civic">
+              <a href="car-honda-civic.html" class="car-overlay"><span>View details</span></a>
+            </div>
+            <div class="car-body">
+              <div>
+                <h3>2023 Honda Civic</h3>
+                <div class="car-meta">
+                  <span>12,000 km</span>
+                </div>
+              </div>
+              <div class="car-footer">
+                <div class="car-price">$29,000</div>
+                <a href="car-honda-civic.html" class="car-link">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="car" data-category="suv">
+            <div class="car-img">
+              <img src="images/mitsubishiasx.png" alt="2015 Mitsubishi ASX">
+              <a href="car-mitsubishi-asx.html" class="car-overlay"><span>View details</span></a>
+            </div>
+            <div class="car-body">
+              <div>
+                <h3>2015 Mitsubishi ASX</h3>
+                <div class="car-meta">
+                  <span>110,000 km</span>
+                </div>
+              </div>
+              <div class="car-footer">
+                <div class="car-price">$9,500</div>
+                <a href="car-mitsubishi-asx.html" class="car-link">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="car" data-category="sedan classic">
+            <div class="car-img">
+              <img src="images/corolla1993.png" alt="1993 Toyota Corolla">
+              <a href="car-toyota-corolla-1993.html" class="car-overlay"><span>View details</span></a>
+            </div>
+            <div class="car-body">
+              <div>
+                <h3>1993 Toyota Corolla</h3>
+                <div class="car-meta">
+                  <span>185,000 km</span>
+                </div>
+              </div>
+              <div class="car-footer">
+                <div class="car-price">$2,500</div>
+                <a href="car-toyota-corolla-1993.html" class="car-link">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="car" data-category="suv">
+            <div class="car-img">
+              <img src="images/toyotaRAV4.png" alt="2023 Toyota RAV4">
+              <a href="car-toyota-rav4.html" class="car-overlay"><span>View details</span></a>
+            </div>
+            <div class="car-body">
+              <div>
+                <h3>2023 Toyota RAV4</h3>
+                <div class="car-meta">
+                  <span>18,000 km</span>
+                </div>
+              </div>
+              <div class="car-footer">
+                <div class="car-price">$32,000</div>
+                <a href="car-toyota-rav4.html" class="car-link">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="car" data-category="sedan classic">
+            <div class="car-img">
+              <img src="images/corolla1999.png" alt="1999 Toyota Corolla">
+              <a href="car-toyota-corolla-1999.html" class="car-overlay"><span>View details</span></a>
+            </div>
+            <div class="car-body">
+              <div>
+                <h3>1999 Toyota Corolla</h3>
+                <div class="car-meta">
+                  <span>220,000 km</span>
+                </div>
+              </div>
+              <div class="car-footer">
+                <div class="car-price">$2,200</div>
+                <a href="car-toyota-corolla-1999.html" class="car-link">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="car" data-category="hatchback">
+            <div class="car-img">
+              <img src="images/fiatpanda.png" alt="2018 Fiat Panda">
+              <a href="car-fiat-panda.html" class="car-overlay"><span>View details</span></a>
+            </div>
+            <div class="car-body">
+              <div>
+                <h3>2018 Fiat Panda</h3>
+                <div class="car-meta">
+                  <span>75,000 km</span>
+                </div>
+              </div>
+              <div class="car-footer">
+                <div class="car-price">$7,000</div>
+                <a href="car-fiat-panda.html" class="car-link">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="car" data-category="hatchback">
+            <div class="car-img">
+              <img src="images/volkswagengolf.png" alt="2015 Volkswagen Golf">
+              <a href="car-volkswagen-golf.html" class="car-overlay"><span>View details</span></a>
+            </div>
+            <div class="car-body">
+              <div>
+                <h3>2015 Volkswagen Golf</h3>
+                <div class="car-meta">
+                  <span>120,000 km</span>
+                </div>
+              </div>
+              <div class="car-footer">
+                <div class="car-price">$10,500</div>
+                <a href="car-volkswagen-golf.html" class="car-link">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="car" data-category="suv">
+            <div class="car-img">
+              <img src="images/gmcenvoy.png" alt="2006 GMC Envoy">
+              <a href="car-gmc-envoy.html" class="car-overlay"><span>View details</span></a>
+            </div>
+            <div class="car-body">
+              <div>
+                <h3>2006 GMC Envoy</h3>
+                <div class="car-meta">
+                  <span>195,000 km</span>
+                </div>
+              </div>
+              <div class="car-footer">
+                <div class="car-price">$4,500</div>
+                <a href="car-gmc-envoy.html" class="car-link">Details</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact inventory-contact">
+      <div class="wrap">
+        <div class="contact-inner reveal">
+          <div class="contact-text">
+            <h2>Found one you like?</h2>
+            <p>
+              Get in touch if you want to ask about a car
+              or arrange a visit.
+            </p>
+          </div>
+          <div class="contact-details">
+            <div>
+              <span>Phone</span>
+              <strong>0000000</strong>
+            </div>
+            <div>
+              <span>WhatsApp</span>
+              <strong>0000000</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <span>© 2026 Apex Motors</span>
+      <a href="index.html">Home</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
